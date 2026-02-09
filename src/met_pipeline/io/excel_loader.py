@@ -1,12 +1,26 @@
-import pandas as pd
 from pathlib import Path
+from typing import Union
+
+import pandas as pd
 
 
-def load_excel(path: str | Path, sheet_name: str | int = 0) -> pd.DataFrame:
+def load_excel(
+    path: Union[str, Path],
+    sheet_name: Union[str, int] = 0,
+) -> pd.DataFrame:
     """
     Load data from an Excel file into a pandas DataFrame.
 
-    This function is intended for development and validation workflows.
-    The returned DataFrame can be passed directly to analysis functions.
+    Parameters
+    ----------
+    path : str or pathlib.Path
+        Path to the Excel file.
+    sheet_name : str or int, default 0
+        Sheet name or index to read.
+
+    Returns
+    -------
+    pandas.DataFrame
+        Loaded data as a DataFrame.
     """
     return pd.read_excel(path, sheet_name=sheet_name)

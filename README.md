@@ -121,3 +121,7 @@ This repository is currently focused on documentation. Backend implementation an
 ## Next Steps
 
 Future work includes finalizing analytical methodology documentation, defining output schemas, and aligning analytical outputs with downstream applications.
+
+## Data Source for Development
+
+During development, the analysis logic is validated using locally available Excel files. The analysis layer is designed to operate on standardized dataframes so that the data source can later be switched to an API without changing the core calculation logic.
