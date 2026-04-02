@@ -107,10 +107,6 @@ FEATURE_LABELS = {
     "fasilitas_per100k": "Fasilitas /100K",
     "sampah_dikelola_per1k": "Sampah Dikelola /1K",
     "timbulan_per1k": "Timbulan /1K",
-    "komp_sisa_makanan": "Komposisi Sisa Makanan (%)",
-    "komp_plastik": "Komposisi Plastik (%)",
-    "komp_kayu_ranting": "Komposisi Kayu/Ranting (%)",
-    "is_urban": "Urban (1=ya)",
 }
 
 SUMBER_PER1K = [
@@ -153,6 +149,15 @@ selected_ukuran = ukuran_options if selected_ukuran_opt == "Semua" else [selecte
 
 show_anomali = st.sidebar.checkbox("Tampilkan anomali", value=True)
 
+st.sidebar.divider()
+st.sidebar.markdown("**Metodologi**")
+st.sidebar.caption(
+    f"K-Means (K=5) pada {len(ALL_FEATURES)} fitur. "
+    f"Anomali: Isolation Forest (5%). "
+    f"Similarity: Euclidean distance. "
+    f"Data: SIPSN & BPS 2024."
+)
+
 # Apply filters
 mask = (
     df["cluster"].isin(selected_clusters)
@@ -171,7 +176,7 @@ tab1, tab2, tab3, tab4 = st.tabs(["Ringkasan", "Peta Cluster", "Profil Cluster",
 # ═══════════════════════════════════════════════════════════════════
 with tab1:
     st.title("Dashboard Cluster Persampahan Kabupaten/Kota 2024")
-    st.caption("Sumber: SIPSN, BPS. Metode: K-Means (K=5), 17 fitur.")
+    st.caption("Sumber: SIPSN, BPS. Metode: K-Means (K=5), 14 fitur. Anomali: Isolation Forest.")
 
     # Metric row
     col1, col2, col3, col4 = st.columns(4)
@@ -227,17 +232,27 @@ with tab1:
         Jumlah=("kabkota", "count"),
         Populasi_Rata=("populasi", "mean"),
         PDRB_Rata=("pdrb_perkapita_juta", "mean"),
+        Kepadatan_Rata=("kepadatan", "mean"),
         Timbulan_Rata=("timbulan_per1k", "mean"),
-        Fasilitas_Rata=("fasilitas_per100k", "mean"),
-        Sisa_Makanan=("komp_sisa_makanan", "mean"),
+        Sampah_Dikelola=("sampah_dikelola_per1k", "mean"),
+        Anomali=("is_anomali", "sum"),
         Silhouette=("silhouette", "mean"),
     ).round(2).reset_index()
+    summary["Anomali"] = summary["Anomali"].astype(int)
     summary.columns = [
         "Cluster", "Label", "Jumlah", "Populasi Rata-rata",
-        "PDRB/Kapita (Juta)", "Timbulan/1K", "Fasilitas/100K",
-        "Komp. Sisa Makanan (%)", "Silhouette"
+        "PDRB/Kapita (Juta)", "Kepadatan", "Timbulan/1K",
+        "Dikelola/1K", "Anomali", "Silhouette"
     ]
     st.dataframe(summary, use_container_width=True, hide_index=True)
+
+    # Download filtered data
+    st.download_button(
+        label="Download data (CSV)",
+        data=dff.to_csv(index=False).encode("utf-8"),
+        file_name="cluster_filtered.csv",
+        mime="text/csv",
+    )
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -461,12 +476,12 @@ with tab3:
         dff[dff["cluster"] == sel_c]
         .sort_values("populasi", ascending=False)
         .head(10)[["kabkota", "provinsi", "ukuran_kota", "populasi",
-                    "pdrb_perkapita_juta", "timbulan_per1k", "fasilitas_per100k",
-                    "komp_sisa_makanan", "silhouette"]]
+                    "pdrb_perkapita_juta", "kepadatan", "timbulan_per1k",
+                    "sampah_dikelola_per1k", "silhouette"]]
     )
     top10.columns = ["Kabkota", "Provinsi", "Ukuran", "Populasi",
-                     "PDRB/Kapita (Juta)", "Timbulan/1K", "Fasilitas/100K",
-                     "Sisa Makanan (%)", "Silhouette"]
+                     "PDRB/Kapita (Juta)", "Kepadatan", "Timbulan/1K",
+                     "Dikelola/1K", "Silhouette"]
     st.dataframe(top10, use_container_width=True, hide_index=True)
 
 
@@ -490,6 +505,9 @@ with tab4:
     col_h2.metric("Ukuran Kota", row["ukuran_kota"].capitalize())
     col_h3.metric("Silhouette", f"{row['silhouette']:.4f}")
     col_h4.metric("Anomali", "Ya" if row["is_anomali"] else "Tidak")
+
+    if row["is_anomali"]:
+        st.warning(f"{search} terdeteksi sebagai anomali oleh Isolation Forest. Data perlu diverifikasi sebelum digunakan sebagai referensi.")
 
     st.divider()
     col_info, col_peer = st.columns([1, 1])
