@@ -5,8 +5,21 @@ __pycache__/
 *.pyo
 *.egg-info/
 
+# Environment
+.env
+
 # OS
 .DS_Store
 
 # Data
 data/raw/
+data/models/
+
+# Documents (generated)
+*.docx
+
+# Shapefile (terlalu besar untuk GitHub)
+notebooks/shp/
+
+# Streamlit secrets (jangan di-commit)
+.streamlit/secrets.toml
