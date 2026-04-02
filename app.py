@@ -157,7 +157,6 @@ selected_ukuran = ukuran_options if selected_ukuran_opt == "Semua" else [selecte
 show_anomali = st.sidebar.checkbox("Tampilkan anomali", value=True)
 
 st.sidebar.divider()
-st.sidebar.markdown("**Metodologi**")
 st.sidebar.caption(
     f"K-Means (K=5) pada {len(ALL_FEATURES)} fitur. "
     f"Anomali: Isolation Forest (5%). "
@@ -174,6 +173,29 @@ mask = (
 if not show_anomali:
     mask &= ~df["is_anomali"].astype(bool)
 dff = df[mask].copy()
+
+# Filter indicator in sidebar
+total = len(df)
+filtered = len(dff)
+if filtered == total:
+    st.sidebar.info(f"Menampilkan semua {total} kabkota")
+elif filtered == 0:
+    st.sidebar.error("Tidak ada data yang cocok dengan filter ini.")
+else:
+    st.sidebar.success(f"Filter aktif: {filtered} dari {total} kabkota")
+
+st.sidebar.divider()
+st.sidebar.markdown("**Metodologi**")
+st.sidebar.caption(
+    f"K-Means (K=5) pada {len(ALL_FEATURES)} fitur. "
+    f"Anomali: Isolation Forest (5%). "
+    f"Similarity: Euclidean distance. "
+    f"Data: SIPSN & BPS 2024."
+)
+
+if filtered == 0:
+    st.warning("Tidak ada data yang cocok dengan filter yang dipilih. Silakan ubah filter.")
+    st.stop()
 
 # ── Tabs ─────────────────────────────────────────────────────────────────────
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["Ringkasan", "Peta Cluster", "Profil Cluster", "Cari Kabkota", "Kualitas Data"])
