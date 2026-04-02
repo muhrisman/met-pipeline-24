@@ -31,38 +31,22 @@ def load_data():
 def load_quality():
     return pd.read_csv("data/output/quality_score_2024.csv")
 
-GEOJSON_URL = "https://raw.githubusercontent.com/superpikar/indonesia-geojson/master/indonesia-en.geojson"
-
 @st.cache_data
 def load_geo():
-    import requests, tempfile, os
+    import os
 
-    # Try local shapefile first (development), fall back to public GeoJSON (production)
+    # Try local shapefile first (development), fall back to bundled GeoJSON (production)
     local_shp = "notebooks/shp/DUKCAPIL_KAB.shp"
+    bundled_geojson = "data/kabkota_simplified.geojson"
+
     if os.path.exists(local_shp):
         gdf = gpd.read_file(local_shp)
         gdf = gdf[["nama_prop", "nama_kab", "geometry"]].copy()
-        gdf = gdf.rename(columns={"nama_prop": "nama_prop", "nama_kab": "nama_kab"})
+        gdf["geometry"] = gdf["geometry"].simplify(0.01, preserve_topology=True)
     else:
-        resp = requests.get(GEOJSON_URL, timeout=60)
-        resp.raise_for_status()
-        with tempfile.NamedTemporaryFile(suffix=".geojson", delete=False, mode="w") as f:
-            f.write(resp.text)
-            tmp_path = f.name
-        gdf = gpd.read_file(tmp_path)
-        os.unlink(tmp_path)
-        # Map column names from public GeoJSON to expected names
-        gdf = gdf.rename(columns={
-            "state": "nama_prop",
-            "name": "nama_kab",
-        })
-        if "nama_prop" not in gdf.columns:
-            gdf["nama_prop"] = ""
-        if "nama_kab" not in gdf.columns:
-            gdf["nama_kab"] = gdf.get("NAME_2", gdf.get("name", ""))
+        gdf = gpd.read_file(bundled_geojson)
         gdf = gdf[["nama_prop", "nama_kab", "geometry"]].copy()
 
-    gdf["geometry"] = gdf["geometry"].simplify(0.01, preserve_topology=True)
     gdf["nama_kab_norm"] = (
         gdf["nama_kab"]
         .str.strip()
