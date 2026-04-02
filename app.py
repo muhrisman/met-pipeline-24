@@ -517,6 +517,17 @@ with tab4:
     if row["is_anomali"]:
         st.warning(f"{search} terdeteksi sebagai anomali oleh Isolation Forest. Data perlu diverifikasi sebelum digunakan sebagai referensi.")
 
+    # Quality score for this kabkota
+    qs_row = dq[dq["kabkota"] == search]
+    if not qs_row.empty:
+        qs = qs_row.iloc[0]
+        st.markdown("**Kualitas Data**")
+        qc1, qc2, qc3, qc4 = st.columns(4)
+        qc1.metric("Overall", f"{qs['qs_overall_10']:.2f} / 10")
+        qc2.metric("Timbulan", f"{qs['qs_timbulan_10']:.2f} / 10")
+        qc3.metric("Sumber Sampah", f"{qs['qs_sumber_10']:.2f} / 10")
+        qc4.metric("Komposisi", f"{qs['qs_komposisi_10']:.2f} / 10")
+
     st.divider()
     col_info, col_peer = st.columns([1, 1])
 
@@ -621,15 +632,18 @@ with tab4:
                 line_color=CLUSTER_COLORS.get(c, "#333"),
                 line_width=2,
             ))
+            peer_colors = ["#3498db", "#e74c3c", "#f39c12"]
             for rank, idx in enumerate(top5_idx[:3], 1):
                 pr = feat_df.iloc[idx]
                 vals_p = [(pr[f] - mins_r[f]) / ranges_r[f] for f in radar_feats]
                 fig_r2.add_trace(go.Scatterpolar(
                     r=vals_p + [vals_p[0]],
                     theta=r_labels + [r_labels[0]],
+                    fill="toself",
+                    fillcolor=peer_colors[rank - 1],
                     name=pr["kabkota"],
-                    opacity=0.55,
-                    line_width=1,
+                    opacity=0.35,
+                    line=dict(color=peer_colors[rank - 1], width=1.5),
                 ))
             fig_r2.update_layout(
                 polar=dict(radialaxis=dict(visible=True, range=[0, 1])),
