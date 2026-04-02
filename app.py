@@ -104,6 +104,7 @@ FEATURE_LABELS = {
     "pdrb_perkapita_juta": "PDRB/Kapita (Juta)",
     "pdrb_growth_pct": "PDRB Growth (%)",
     "kepadatan": "Kepadatan (jiwa/km²)",
+    "is_urban": "Urban/Rural",
     "fasilitas_per100k": "Fasilitas /100K",
     "sampah_dikelola_per1k": "Sampah Dikelola /1K",
     "timbulan_per1k": "Timbulan /1K",
@@ -114,11 +115,12 @@ SUMBER_PER1K = [
     "pasar_per1k", "fasilitas_publik_per1k", "lainnya_per1k", "kawasan_per1k",
 ]
 
-FEATURE_ECON = ["pdrb_perkapita_juta", "pdrb_growth_pct", "kepadatan"]
+FEATURE_ECON = ["pdrb_perkapita_juta", "pdrb_growth_pct"]
+FEATURE_DEMOGRAFI = ["kepadatan", "is_urban"]
 FEATURE_FAS = ["fasilitas_per100k", "sampah_dikelola_per1k"]
 FEATURE_TIM = ["timbulan_per1k"]
 
-ALL_FEATURES = SUMBER_PER1K + FEATURE_ECON + FEATURE_FAS + FEATURE_TIM
+ALL_FEATURES = SUMBER_PER1K + FEATURE_ECON + FEATURE_DEMOGRAFI + FEATURE_FAS + FEATURE_TIM
 
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 st.sidebar.title("Filter")
@@ -381,13 +383,14 @@ with tab3:
 
     feature_group = st.radio(
         "Kelompok fitur:",
-        ["Sumber Sampah", "Ekonomi", "Fasilitas & Timbulan", "Semua"],
+        ["Sumber Sampah", "Ekonomi", "Demografis", "Fasilitas & Timbulan", "Semua"],
         horizontal=True,
     )
 
     group_map = {
         "Sumber Sampah": SUMBER_PER1K,
         "Ekonomi": FEATURE_ECON,
+        "Demografis": FEATURE_DEMOGRAFI,
         "Fasilitas & Timbulan": FEATURE_FAS + FEATURE_TIM,
         "Semua": ALL_FEATURES,
     }
@@ -537,6 +540,7 @@ with tab4:
             "Semua Dimensi": ALL_FEATURES,
             "Sumber Sampah": SUMBER_PER1K,
             "Ekonomi": FEATURE_ECON,
+            "Demografis": FEATURE_DEMOGRAFI,
             "Fasilitas & Timbulan": FEATURE_FAS + FEATURE_TIM,
         }
 
