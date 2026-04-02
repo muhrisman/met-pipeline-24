@@ -27,6 +27,10 @@ def load_data():
     df = pd.read_csv("data/output/cluster_economic_sumber_2024.csv")
     return df
 
+@st.cache_data
+def load_quality():
+    return pd.read_csv("data/output/quality_score_2024.csv")
+
 GEOJSON_URL = "https://raw.githubusercontent.com/superpikar/indonesia-geojson/master/indonesia-en.geojson"
 
 @st.cache_data
@@ -83,6 +87,7 @@ def build_geojson(_gdf, cluster_keys: tuple):
 
 df = load_data()
 gdf = load_geo()
+dq = load_quality()
 
 # ── Cluster color palette ────────────────────────────────────────────────────
 CLUSTER_COLORS = {
@@ -171,7 +176,7 @@ if not show_anomali:
 dff = df[mask].copy()
 
 # ── Tabs ─────────────────────────────────────────────────────────────────────
-tab1, tab2, tab3, tab4 = st.tabs(["Ringkasan", "Peta Cluster", "Profil Cluster", "Cari Kabkota"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Ringkasan", "Peta Cluster", "Profil Cluster", "Cari Kabkota", "Kualitas Data"])
 
 # ═══════════════════════════════════════════════════════════════════
 # TAB 1 — RINGKASAN
@@ -590,11 +595,19 @@ with tab4:
 
             # Radar vs top 3 peers on selected features (up to 7 for readability)
             st.markdown("**Perbandingan dengan 3 Teratas**")
+            st.caption(
+                "Nilai dinormalisasi relatif terhadap 4 kota yang ditampilkan (0 = terendah, 1 = tertinggi di antara keempatnya). "
+                "Gunakan tabel Profil Fitur di sebelah kiri untuk melihat nilai absolut."
+            )
             radar_feats = sim_feats[:7] if len(sim_feats) > 7 else sim_feats
             r_labels = [FEATURE_LABELS.get(f, f) for f in radar_feats]
 
-            mins_r = df[radar_feats].min()
-            maxs_r = df[radar_feats].max()
+            # Normalize within the comparison group (selected + top 3 peers)
+            # so differences between similar cities are visible
+            compare_rows = [row] + [feat_df.iloc[idx] for idx in top5_idx[:3]]
+            compare_df = pd.DataFrame([r[radar_feats] for r in compare_rows])
+            mins_r = compare_df.min()
+            maxs_r = compare_df.max()
             ranges_r = (maxs_r - mins_r).replace(0, 1)
 
             fig_r2 = go.Figure()
@@ -628,3 +641,114 @@ with tab4:
     # Full data row
     with st.expander("Lihat semua data"):
         st.dataframe(pd.DataFrame([row]), use_container_width=True)
+
+
+# ═══════════════════════════════════════════════════════════════════
+# TAB 5 — KUALITAS DATA
+# ═══════════════════════════════════════════════════════════════════
+with tab5:
+    st.subheader("Kualitas Data SIPSN 2024")
+    st.caption(
+        "Skor kualitas dihitung dari 3 komponen: Report Rate (partisipasi pelaporan), "
+        "Completeness (kelengkapan isian), dan Outlier Quality (konsistensi nilai). "
+        "Skala 0–10."
+    )
+
+    # Filter quality data to match sidebar filters
+    dq_filt = dq[
+        dq["cluster"].isin(selected_clusters) &
+        dq["provinsi"].isin(selected_provinsi) &
+        dq["ukuran_kota"].isin(selected_ukuran)
+    ].copy()
+
+    # ── Metric row ────────────────────────────────────────────────
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Rata-rata Skor Overall", f"{dq_filt['qs_overall_10'].mean():.2f} / 10")
+    c2.metric("Rata-rata Skor Timbulan", f"{dq_filt['qs_timbulan_10'].mean():.2f} / 10")
+    c3.metric("Rata-rata Skor Sumber", f"{dq_filt['qs_sumber_10'].mean():.2f} / 10")
+    c4.metric("Rata-rata Skor Komposisi", f"{dq_filt['qs_komposisi_10'].mean():.2f} / 10")
+
+    st.divider()
+
+    col_left, col_right = st.columns([1, 1])
+
+    with col_left:
+        st.markdown("**Distribusi Skor Overall per Cluster**")
+        fig_qs_box = px.box(
+            dq_filt,
+            x="cluster_label", y="qs_overall_10",
+            color="cluster",
+            color_discrete_map=CLUSTER_COLORS,
+            points="outliers",
+            labels={"cluster_label": "Cluster", "qs_overall_10": "Skor Kualitas (0-10)"},
+        )
+        fig_qs_box.update_layout(height=360, showlegend=False, margin=dict(t=10, b=10))
+        st.plotly_chart(fig_qs_box, use_container_width=True)
+
+    with col_right:
+        st.markdown("**Komponen Kualitas rata-rata per Provinsi**")
+        prov_qs = dq_filt.groupby("provinsi")[
+            ["qs_timbulan_10", "qs_sumber_10", "qs_komposisi_10"]
+        ].mean().round(2).reset_index()
+        prov_qs = prov_qs.sort_values("qs_timbulan_10")
+        fig_prov = px.bar(
+            prov_qs.melt(id_vars="provinsi",
+                         value_vars=["qs_timbulan_10", "qs_sumber_10", "qs_komposisi_10"],
+                         var_name="Komponen", value_name="Skor"),
+            x="Skor", y="provinsi", color="Komponen",
+            barmode="group",
+            color_discrete_map={
+                "qs_timbulan_10": "#3498db",
+                "qs_sumber_10": "#2ecc71",
+                "qs_komposisi_10": "#f39c12",
+            },
+            labels={
+                "qs_timbulan_10": "Timbulan",
+                "qs_sumber_10": "Sumber",
+                "qs_komposisi_10": "Komposisi",
+                "provinsi": "",
+            },
+        )
+        fig_prov.update_layout(height=max(360, len(prov_qs) * 20), margin=dict(t=10, b=10))
+        st.plotly_chart(fig_prov, use_container_width=True)
+
+    # ── Heatmap komponen per kabkota ──────────────────────────────
+    st.markdown("**Heatmap Komponen Kualitas per Kabkota**")
+    st.caption("Warna merah = skor rendah, hijau = skor tinggi.")
+
+    hm_df = dq_filt.sort_values("qs_overall_10")[
+        ["kabkota", "provinsi", "report_rate", "sumber_completeness",
+         "komp_completeness", "outlier_quality", "qs_overall_10"]
+    ].copy()
+    hm_df.columns = ["Kabkota", "Provinsi", "Report Rate", "Completeness Sumber",
+                     "Completeness Komposisi", "Outlier Quality", "Skor Overall"]
+    for col in ["Report Rate", "Completeness Sumber", "Completeness Komposisi", "Outlier Quality"]:
+        hm_df[col] = (hm_df[col] * 10).round(2)
+
+    st.dataframe(
+        hm_df.style.background_gradient(
+            subset=["Report Rate", "Completeness Sumber", "Completeness Komposisi",
+                    "Outlier Quality", "Skor Overall"],
+            cmap="RdYlGn", vmin=0, vmax=10
+        ),
+        use_container_width=True,
+        hide_index=True,
+        height=400,
+    )
+
+    # ── Kabkota dengan skor rendah ────────────────────────────────
+    st.markdown("**Kabkota dengan Kualitas Data Terendah (Bottom 20)**")
+    bottom20 = dq_filt.nsmallest(20, "qs_overall_10")[
+        ["kabkota", "provinsi", "cluster_label",
+         "qs_timbulan_10", "qs_sumber_10", "qs_komposisi_10", "qs_overall_10"]
+    ].copy()
+    bottom20.columns = ["Kabkota", "Provinsi", "Cluster",
+                        "Timbulan", "Sumber", "Komposisi", "Overall"]
+    st.dataframe(bottom20, use_container_width=True, hide_index=True)
+
+    st.download_button(
+        label="Download Quality Score (CSV)",
+        data=dq_filt.to_csv(index=False).encode("utf-8"),
+        file_name="quality_score_filtered.csv",
+        mime="text/csv",
+    )

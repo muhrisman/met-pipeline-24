@@ -1,0 +1,231 @@
+kabkota,provinsi,ukuran_kota,cluster,cluster_label,report_rate,sumber_completeness,komp_completeness,komp_valid_sum,outlier_quality,qs_timbulan,qs_sumber,qs_komposisi,qs_overall,qs_timbulan_10,qs_sumber_10,qs_komposisi_10,qs_overall_10
+Kota Bandung,Jawa Barat,metropolitan,0,Urban Padat,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Kota Banjarmasin,Kalimantan Selatan,besar,0,Urban Padat,0.6154,0.4286,1.0,0.0,1.0,0.7692,0.656,0.8462,0.7571,7.69,6.56,8.46,7.57
+Kota Bogor,Jawa Barat,metropolitan,0,Urban Padat,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Kota Bukittinggi,Sumatera Barat,sedang,0,Urban Padat,0.6667,0.8571,0.0,0.0,1.0,0.8,0.8429,0.5667,0.7365,8.0,8.43,5.67,7.37
+Kota Cirebon,Jawa Barat,sedang,0,Urban Padat,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Kota Madiun,Jawa Timur,sedang,0,Urban Padat,0.6552,1.0,1.0,1.0,0.0,0.3931,0.5966,0.5621,0.5172,3.93,5.97,5.62,5.17
+Kota Magelang,Jawa Tengah,sedang,0,Urban Padat,0.8182,1.0,1.0,1.0,0.0,0.4909,0.6455,0.6273,0.5879,4.91,6.45,6.27,5.88
+Kota Makasar,Sulawesi Selatan,metropolitan,0,Urban Padat,0.6471,0.4286,0.6667,0.0,1.0,0.7882,0.6655,0.7588,0.7375,7.88,6.66,7.59,7.38
+Kota Surabaya,Jawa Timur,metropolitan,0,Urban Padat,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Kota Surakarta,Jawa Tengah,besar,0,Urban Padat,0.8182,1.0,0.7778,1.0,0.0,0.4909,0.6455,0.5606,0.5657,4.91,6.45,5.61,5.66
+Kota Tangerang,Banten,metropolitan,0,Urban Padat,0.5,0.8571,1.0,1.0,0.0,0.3,0.4929,0.5,0.431,3.0,4.93,5.0,4.31
+Kota Tangerang Selatan,Banten,metropolitan,0,Urban Padat,0.5,0.8571,0.8889,1.0,1.0,0.7,0.7929,0.7667,0.7532,7.0,7.93,7.67,7.53
+Kota Tegal,Jawa Tengah,sedang,0,Urban Padat,0.8182,1.0,1.0,1.0,0.0,0.4909,0.6455,0.6273,0.5879,4.91,6.45,6.27,5.88
+Kota Yogyakarta,Daerah Istimewa Yogyakarta,sedang,0,Urban Padat,0.8,0.8571,1.0,1.0,1.0,0.88,0.8829,0.92,0.8943,8.8,8.83,9.2,8.94
+Aceh Tamiang,Aceh,kecil,1,Kabkota Berkembang,0.9565,0.8571,1.0,1.0,1.0,0.9739,0.9298,0.9826,0.9621,9.74,9.3,9.83,9.62
+Aceh Timur,Aceh,sedang,1,Kabkota Berkembang,0.9565,0.8571,1.0,1.0,1.0,0.9739,0.9298,0.9826,0.9621,9.74,9.3,9.83,9.62
+Aceh Utara,Aceh,sedang,1,Kabkota Berkembang,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Badung,Bali,besar,1,Kabkota Berkembang,0.875,1.0,1.0,1.0,1.0,0.925,0.9625,0.95,0.9458,9.25,9.63,9.5,9.46
+Balangan,Kalimantan Selatan,sedang,1,Kabkota Berkembang,0.6154,1.0,1.0,1.0,1.0,0.7692,0.8846,0.8462,0.8333,7.69,8.85,8.46,8.33
+Banggai Laut,Sulawesi Tengah,kecil,1,Kabkota Berkembang,0.6667,0.0,0.0,0.0,1.0,0.8,0.5,0.5667,0.6222,8.0,5.0,5.67,6.22
+Bangka,Kepulauan Bangka Belitung,sedang,1,Kabkota Berkembang,0.75,1.0,1.0,1.0,1.0,0.85,0.925,0.9,0.8917,8.5,9.25,9.0,8.92
+Bangka Barat,Kepulauan Bangka Belitung,sedang,1,Kabkota Berkembang,0.75,0.8571,1.0,1.0,1.0,0.85,0.8679,0.9,0.8726,8.5,8.68,9.0,8.73
+Bangli,Bali,sedang,1,Kabkota Berkembang,0.875,1.0,1.0,1.0,1.0,0.925,0.9625,0.95,0.9458,9.25,9.63,9.5,9.46
+Banjar,Kalimantan Selatan,besar,1,Kabkota Berkembang,0.6154,0.7143,0.5556,1.0,1.0,0.7692,0.7703,0.7128,0.7508,7.69,7.7,7.13,7.51
+Bantaeng,Sulawesi Selatan,sedang,1,Kabkota Berkembang,0.6471,1.0,1.0,1.0,1.0,0.7882,0.8941,0.8588,0.8471,7.88,8.94,8.59,8.47
+Bantul,Daerah Istimewa Yogyakarta,besar,1,Kabkota Berkembang,0.8,0.7143,0.8889,1.0,1.0,0.88,0.8257,0.8867,0.8641,8.8,8.26,8.87,8.64
+Barito Selatan,Kalimantan Tengah,sedang,1,Kabkota Berkembang,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Barito Timur,Kalimantan Tengah,sedang,1,Kabkota Berkembang,0.6667,0.7143,1.0,1.0,1.0,0.8,0.7857,0.8667,0.8175,8.0,7.86,8.67,8.17
+Batang Hari,Jambi,sedang,1,Kabkota Berkembang,0.8,1.0,0.8889,0.0,1.0,0.88,0.94,0.8867,0.9022,8.8,9.4,8.87,9.02
+Bekasi,Jawa Barat,metropolitan,1,Kabkota Berkembang,0.6667,0.4286,0.0,0.0,1.0,0.8,0.6714,0.5667,0.6794,8.0,6.71,5.67,6.79
+Bengkalis,Riau,sedang,1,Kabkota Berkembang,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Bengkulu Utara,Bengkulu,sedang,1,Kabkota Berkembang,0.6,1.0,1.0,1.0,1.0,0.76,0.88,0.84,0.8267,7.6,8.8,8.4,8.27
+Berau,Kalimantan Timur,sedang,1,Kabkota Berkembang,0.9,1.0,1.0,1.0,1.0,0.94,0.97,0.96,0.9567,9.4,9.7,9.6,9.57
+Bone Bolango,Gorontalo,sedang,1,Kabkota Berkembang,0.5,0.8571,0.7778,1.0,1.0,0.7,0.7929,0.7333,0.7421,7.0,7.93,7.33,7.42
+Buleleng,Bali,besar,1,Kabkota Berkembang,0.875,1.0,1.0,1.0,1.0,0.925,0.9625,0.95,0.9458,9.25,9.63,9.5,9.46
+Bulungan,Kalimantan Utara,kecil,1,Kabkota Berkembang,0.6667,0.8571,0.0,0.0,1.0,0.8,0.8429,0.5667,0.7365,8.0,8.43,5.67,7.37
+Bungo,Jambi,sedang,1,Kabkota Berkembang,0.8,1.0,1.0,1.0,1.0,0.88,0.94,0.92,0.9133,8.8,9.4,9.2,9.13
+Dharmasraya,Sumatera Barat,sedang,1,Kabkota Berkembang,0.6667,0.8571,0.6667,1.0,1.0,0.8,0.8429,0.7667,0.8032,8.0,8.43,7.67,8.03
+Flores Timur,Nusa Tenggara Timur,sedang,1,Kabkota Berkembang,0.9412,1.0,1.0,1.0,1.0,0.9647,0.9824,0.9765,0.9745,9.65,9.82,9.76,9.75
+Gianyar,Bali,besar,1,Kabkota Berkembang,0.875,0.5714,1.0,0.0,1.0,0.925,0.7911,0.95,0.8887,9.25,7.91,9.5,8.89
+Gunung Kidul,Daerah Istimewa Yogyakarta,besar,1,Kabkota Berkembang,0.8,1.0,0.8889,0.0,1.0,0.88,0.94,0.8867,0.9022,8.8,9.4,8.87,9.02
+Gunung Mas,Kalimantan Tengah,sedang,1,Kabkota Berkembang,0.6667,0.7143,1.0,1.0,1.0,0.8,0.7857,0.8667,0.8175,8.0,7.86,8.67,8.17
+Hulu Sungai Selatan,Kalimantan Selatan,sedang,1,Kabkota Berkembang,0.6154,1.0,1.0,1.0,1.0,0.7692,0.8846,0.8462,0.8333,7.69,8.85,8.46,8.33
+Indramayu,Jawa Barat,metropolitan,1,Kabkota Berkembang,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Jayapura,Papua,sedang,1,Kabkota Berkembang,0.6,1.0,1.0,1.0,1.0,0.76,0.88,0.84,0.8267,7.6,8.8,8.4,8.27
+Jembrana,Bali,sedang,1,Kabkota Berkembang,0.875,1.0,1.0,1.0,1.0,0.925,0.9625,0.95,0.9458,9.25,9.63,9.5,9.46
+Kapuas,Kalimantan Tengah,sedang,1,Kabkota Berkembang,0.6667,0.8571,0.8889,1.0,1.0,0.8,0.8429,0.8333,0.8254,8.0,8.43,8.33,8.25
+Karimun,Kepulauan Riau,sedang,1,Kabkota Berkembang,0.25,1.0,1.0,1.0,1.0,0.55,0.775,0.7,0.675,5.5,7.75,7.0,6.75
+Kayong Utara,Kalimantan Barat,sedang,1,Kabkota Berkembang,0.3636,0.8571,0.5556,0.0,1.0,0.6182,0.7519,0.6121,0.6608,6.18,7.52,6.12,6.61
+Kepulauan Sangihe,Sulawesi Utara,sedang,1,Kabkota Berkembang,0.7333,1.0,1.0,1.0,1.0,0.84,0.92,0.8933,0.8844,8.4,9.2,8.93,8.84
+Klungkung,Bali,sedang,1,Kabkota Berkembang,0.875,1.0,1.0,1.0,1.0,0.925,0.9625,0.95,0.9458,9.25,9.63,9.5,9.46
+Kolaka,Sulawesi Tenggara,sedang,1,Kabkota Berkembang,0.8571,1.0,1.0,1.0,1.0,0.9143,0.9571,0.9429,0.9381,9.14,9.57,9.43,9.38
+Kota Ambon,Maluku,sedang,1,Kabkota Berkembang,0.4,0.1429,0.0,0.0,1.0,0.64,0.4771,0.46,0.5257,6.4,4.77,4.6,5.26
+Kota Balikpapan,Kalimantan Timur,besar,1,Kabkota Berkembang,0.9,1.0,1.0,1.0,1.0,0.94,0.97,0.96,0.9567,9.4,9.7,9.6,9.57
+Kota Banda Aceh,Aceh,sedang,1,Kabkota Berkembang,0.9565,0.8571,1.0,1.0,1.0,0.9739,0.9298,0.9826,0.9621,9.74,9.3,9.83,9.62
+Kota Baubau,Sulawesi Tenggara,sedang,1,Kabkota Berkembang,0.8571,1.0,0.6667,1.0,1.0,0.9143,0.9571,0.8429,0.9048,9.14,9.57,8.43,9.05
+Kota Bitung,Sulawesi Utara,sedang,1,Kabkota Berkembang,0.7333,1.0,1.0,1.0,1.0,0.84,0.92,0.8933,0.8844,8.4,9.2,8.93,8.84
+Kota Blitar,Jawa Timur,sedang,1,Kabkota Berkembang,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Kota Bontang,Kalimantan Timur,sedang,1,Kabkota Berkembang,0.9,0.7143,1.0,1.0,1.0,0.94,0.8557,0.96,0.9186,9.4,8.56,9.6,9.19
+Kota Dumai,Riau,sedang,1,Kabkota Berkembang,0.6667,0.8571,1.0,1.0,1.0,0.8,0.8429,0.8667,0.8365,8.0,8.43,8.67,8.37
+Kota Jambi,Jambi,besar,1,Kabkota Berkembang,0.8,1.0,1.0,1.0,1.0,0.88,0.94,0.92,0.9133,8.8,9.4,9.2,9.13
+Kota Jayapura,Papua,sedang,1,Kabkota Berkembang,0.6,0.8571,1.0,1.0,1.0,0.76,0.8229,0.84,0.8076,7.6,8.23,8.4,8.08
+Kota Kendari,Sulawesi Tenggara,sedang,1,Kabkota Berkembang,0.8571,1.0,1.0,1.0,1.0,0.9143,0.9571,0.9429,0.9381,9.14,9.57,9.43,9.38
+Kota Kotamobagu,Sulawesi Utara,sedang,1,Kabkota Berkembang,0.7333,0.8571,1.0,1.0,1.0,0.84,0.8629,0.8933,0.8654,8.4,8.63,8.93,8.65
+Kota Kupang,Nusa Tenggara Timur,sedang,1,Kabkota Berkembang,0.9412,1.0,1.0,1.0,1.0,0.9647,0.9824,0.9765,0.9745,9.65,9.82,9.76,9.75
+Kota Langsa,Aceh,sedang,1,Kabkota Berkembang,0.9565,0.8571,1.0,1.0,1.0,0.9739,0.9298,0.9826,0.9621,9.74,9.3,9.83,9.62
+Kota Lhokseumawe,Aceh,sedang,1,Kabkota Berkembang,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Kota Padang,Sumatera Barat,besar,1,Kabkota Berkembang,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Kota Palangka Raya,Kalimantan Tengah,sedang,1,Kabkota Berkembang,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Kota Palopo,Sulawesi Selatan,sedang,1,Kabkota Berkembang,0.6471,1.0,1.0,1.0,1.0,0.7882,0.8941,0.8588,0.8471,7.88,8.94,8.59,8.47
+Kota Palu,Sulawesi Tengah,sedang,1,Kabkota Berkembang,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Kota Parepare,Sulawesi Selatan,sedang,1,Kabkota Berkembang,0.6471,1.0,1.0,1.0,1.0,0.7882,0.8941,0.8588,0.8471,7.88,8.94,8.59,8.47
+Kota Payakumbuh,Sumatera Barat,sedang,1,Kabkota Berkembang,0.6667,1.0,1.0,0.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Kota Prabumulih,Sumatera Selatan,sedang,1,Kabkota Berkembang,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,10.0,10.0,10.0
+Kota Probolinggo,Jawa Timur,sedang,1,Kabkota Berkembang,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Kota Sabang,Aceh,kecil,1,Kabkota Berkembang,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Kota Samarinda,Kalimantan Timur,besar,1,Kabkota Berkembang,0.9,0.8571,1.0,1.0,1.0,0.94,0.9129,0.96,0.9376,9.4,9.13,9.6,9.38
+Kota Semarang,Jawa Tengah,metropolitan,1,Kabkota Berkembang,0.8182,1.0,0.8889,1.0,1.0,0.8909,0.9455,0.8939,0.9101,8.91,9.45,8.94,9.1
+Kota Serang,Banten,besar,1,Kabkota Berkembang,0.5,1.0,1.0,1.0,1.0,0.7,0.85,0.8,0.7833,7.0,8.5,8.0,7.83
+Kota Solok,Sumatera Barat,kecil,1,Kabkota Berkembang,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Kota Tasikmalaya,Jawa Barat,besar,1,Kabkota Berkembang,0.6667,1.0,0.8889,1.0,1.0,0.8,0.9,0.8333,0.8444,8.0,9.0,8.33,8.44
+Kotawaringin Barat,Kalimantan Tengah,sedang,1,Kabkota Berkembang,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Kudus,Jawa Tengah,besar,1,Kabkota Berkembang,0.8182,1.0,1.0,1.0,1.0,0.8909,0.9455,0.9273,0.9212,8.91,9.45,9.27,9.21
+Kuningan,Jawa Barat,metropolitan,1,Kabkota Berkembang,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Kutai Kartanegara,Kalimantan Timur,sedang,1,Kabkota Berkembang,0.9,1.0,1.0,1.0,1.0,0.94,0.97,0.96,0.9567,9.4,9.7,9.6,9.57
+Lahat,Sumatera Selatan,sedang,1,Kabkota Berkembang,1.0,0.8571,1.0,1.0,1.0,1.0,0.9429,1.0,0.981,10.0,9.43,10.0,9.81
+Lamongan,Jawa Timur,metropolitan,1,Kabkota Berkembang,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Lampung Timur,Lampung,sedang,1,Kabkota Berkembang,0.6667,0.7143,0.8889,1.0,1.0,0.8,0.7857,0.8333,0.8063,8.0,7.86,8.33,8.06
+Langkat,Sumatera Utara,sedang,1,Kabkota Berkembang,0.875,1.0,1.0,1.0,1.0,0.925,0.9625,0.95,0.9458,9.25,9.63,9.5,9.46
+Lombok Utara,Nusa Tenggara Barat,sedang,1,Kabkota Berkembang,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,10.0,10.0,10.0
+Luwu Timur,Sulawesi Selatan,sedang,1,Kabkota Berkembang,0.6471,1.0,1.0,1.0,1.0,0.7882,0.8941,0.8588,0.8471,7.88,8.94,8.59,8.47
+Magetan,Jawa Timur,besar,1,Kabkota Berkembang,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Manokwari,Papua Barat,sedang,1,Kabkota Berkembang,0.6667,0.7143,0.5556,1.0,1.0,0.8,0.7857,0.7333,0.773,8.0,7.86,7.33,7.73
+Minahasa Tenggara,Sulawesi Utara,kecil,1,Kabkota Berkembang,0.7333,1.0,1.0,1.0,1.0,0.84,0.92,0.8933,0.8844,8.4,9.2,8.93,8.84
+Mojokerto,Jawa Timur,metropolitan,1,Kabkota Berkembang,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Muara Enim,Sumatera Selatan,besar,1,Kabkota Berkembang,1.0,0.8571,1.0,1.0,1.0,1.0,0.9429,1.0,0.981,10.0,9.43,10.0,9.81
+Musi Banyuasin,Sumatera Selatan,besar,1,Kabkota Berkembang,1.0,0.8571,1.0,1.0,1.0,1.0,0.9429,1.0,0.981,10.0,9.43,10.0,9.81
+Nagan Raya,Aceh,sedang,1,Kabkota Berkembang,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Ngada,Nusa Tenggara Timur,sedang,1,Kabkota Berkembang,0.9412,1.0,1.0,1.0,1.0,0.9647,0.9824,0.9765,0.9745,9.65,9.82,9.76,9.75
+Nunukan,Kalimantan Utara,kecil,1,Kabkota Berkembang,0.6667,1.0,1.0,1.0,0.0,0.4,0.6,0.5667,0.5222,4.0,6.0,5.67,5.22
+Ogan Komering Ulu Timur,Sumatera Selatan,sedang,1,Kabkota Berkembang,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,10.0,10.0,10.0
+Pangkajene dan Kepulauan,Sulawesi Selatan,sedang,1,Kabkota Berkembang,0.6471,1.0,1.0,1.0,1.0,0.7882,0.8941,0.8588,0.8471,7.88,8.94,8.59,8.47
+Paser,Kalimantan Timur,sedang,1,Kabkota Berkembang,0.9,1.0,1.0,1.0,1.0,0.94,0.97,0.96,0.9567,9.4,9.7,9.6,9.57
+Penukal Abab Lematang Ilir,Sumatera Selatan,sedang,1,Kabkota Berkembang,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,10.0,10.0,10.0
+Pidie,Aceh,kecil,1,Kabkota Berkembang,0.9565,0.7143,1.0,1.0,1.0,0.9739,0.8727,0.9826,0.9431,9.74,8.73,9.83,9.43
+Semarang,Jawa Tengah,metropolitan,1,Kabkota Berkembang,0.8182,1.0,0.8889,1.0,1.0,0.8909,0.9455,0.8939,0.9101,8.91,9.45,8.94,9.1
+Siak,Riau,sedang,1,Kabkota Berkembang,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Sidenreng Rappang,Sulawesi Selatan,sedang,1,Kabkota Berkembang,0.6471,1.0,1.0,1.0,1.0,0.7882,0.8941,0.8588,0.8471,7.88,8.94,8.59,8.47
+Simalungun,Sumatera Utara,besar,1,Kabkota Berkembang,0.875,1.0,1.0,1.0,1.0,0.925,0.9625,0.95,0.9458,9.25,9.63,9.5,9.46
+Sleman,Daerah Istimewa Yogyakarta,metropolitan,1,Kabkota Berkembang,0.8,0.8571,0.8889,1.0,1.0,0.88,0.8829,0.8867,0.8832,8.8,8.83,8.87,8.83
+Solok,Sumatera Barat,sedang,1,Kabkota Berkembang,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Soppeng,Sulawesi Selatan,sedang,1,Kabkota Berkembang,0.6471,1.0,1.0,1.0,1.0,0.7882,0.8941,0.8588,0.8471,7.88,8.94,8.59,8.47
+Sragen,Jawa Tengah,metropolitan,1,Kabkota Berkembang,0.8182,1.0,1.0,1.0,1.0,0.8909,0.9455,0.9273,0.9212,8.91,9.45,9.27,9.21
+Sukoharjo,Jawa Tengah,besar,1,Kabkota Berkembang,0.8182,1.0,1.0,1.0,1.0,0.8909,0.9455,0.9273,0.9212,8.91,9.45,9.27,9.21
+Tabalong,Kalimantan Selatan,sedang,1,Kabkota Berkembang,0.6154,1.0,1.0,1.0,1.0,0.7692,0.8846,0.8462,0.8333,7.69,8.85,8.46,8.33
+Tanah Bumbu,Kalimantan Selatan,sedang,1,Kabkota Berkembang,0.6154,0.8571,1.0,1.0,1.0,0.7692,0.8275,0.8462,0.8143,7.69,8.27,8.46,8.14
+Tuban,Jawa Timur,metropolitan,1,Kabkota Berkembang,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Wonosobo,Jawa Tengah,besar,1,Kabkota Berkembang,0.8182,0.8571,1.0,1.0,1.0,0.8909,0.8883,0.9273,0.9022,8.91,8.88,9.27,9.02
+Bangka Tengah,Kepulauan Bangka Belitung,sedang,2,Data Anomali (Perlu Verifikasi),0.75,1.0,0.8889,1.0,0.0,0.45,0.625,0.5667,0.5472,4.5,6.25,5.67,5.47
+Minahasa Utara,Sulawesi Utara,sedang,2,Data Anomali (Perlu Verifikasi),0.7333,1.0,1.0,1.0,0.0,0.44,0.62,0.5933,0.5511,4.4,6.2,5.93,5.51
+Tulungagung,Jawa Timur,metropolitan,2,Data Anomali (Perlu Verifikasi),0.6552,1.0,1.0,1.0,0.0,0.3931,0.5966,0.5621,0.5172,3.93,5.97,5.62,5.17
+Aceh Barat,Aceh,sedang,3,Menengah Aktif,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Aceh Barat Daya,Aceh,sedang,3,Menengah Aktif,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Aceh Besar,Aceh,besar,3,Menengah Aktif,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Aceh Jaya,Aceh,sedang,3,Menengah Aktif,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Aceh Selatan,Aceh,sedang,3,Menengah Aktif,0.9565,0.8571,1.0,1.0,1.0,0.9739,0.9298,0.9826,0.9621,9.74,9.3,9.83,9.62
+Aceh Singkil,Aceh,sedang,3,Menengah Aktif,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Aceh Tengah,Aceh,sedang,3,Menengah Aktif,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Aceh Tenggara,Aceh,sedang,3,Menengah Aktif,0.9565,0.8571,0.8889,1.0,1.0,0.9739,0.9298,0.9493,0.951,9.74,9.3,9.49,9.51
+Asmat,Papua Selatan,sedang,3,Menengah Aktif,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,10.0,10.0,10.0
+Banggai Kepulauan,Sulawesi Tengah,sedang,3,Menengah Aktif,0.6667,0.8571,1.0,1.0,1.0,0.8,0.8429,0.8667,0.8365,8.0,8.43,8.67,8.37
+Bangkalan,Jawa Timur,metropolitan,3,Menengah Aktif,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Banjarnegara,Jawa Tengah,metropolitan,3,Menengah Aktif,0.8182,1.0,1.0,1.0,1.0,0.8909,0.9455,0.9273,0.9212,8.91,9.45,9.27,9.21
+Banyumas,Jawa Tengah,metropolitan,3,Menengah Aktif,0.8182,1.0,0.8889,1.0,1.0,0.8909,0.9455,0.8939,0.9101,8.91,9.45,8.94,9.1
+Barito Kuala,Kalimantan Selatan,sedang,3,Menengah Aktif,0.6154,1.0,1.0,1.0,1.0,0.7692,0.8846,0.8462,0.8333,7.69,8.85,8.46,8.33
+Barito Utara,Kalimantan Tengah,sedang,3,Menengah Aktif,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Barru,Sulawesi Selatan,sedang,3,Menengah Aktif,0.6471,1.0,1.0,1.0,1.0,0.7882,0.8941,0.8588,0.8471,7.88,8.94,8.59,8.47
+Belu,Nusa Tenggara Timur,sedang,3,Menengah Aktif,0.9412,0.8571,1.0,1.0,1.0,0.9647,0.9252,0.9765,0.9555,9.65,9.25,9.76,9.55
+Bener Meriah,Aceh,sedang,3,Menengah Aktif,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Biak Numfor,Papua,sedang,3,Menengah Aktif,0.6,1.0,1.0,1.0,1.0,0.76,0.88,0.84,0.8267,7.6,8.8,8.4,8.27
+Blitar,Jawa Timur,metropolitan,3,Menengah Aktif,0.6552,0.5714,1.0,1.0,1.0,0.7931,0.7251,0.8621,0.7934,7.93,7.25,8.62,7.93
+Bolaang Mongondow,Sulawesi Utara,sedang,3,Menengah Aktif,0.7333,0.7143,1.0,1.0,1.0,0.84,0.8057,0.8933,0.8463,8.4,8.06,8.93,8.46
+Bolaang Mongondow Selatan,Sulawesi Utara,kecil,3,Menengah Aktif,0.7333,1.0,1.0,1.0,1.0,0.84,0.92,0.8933,0.8844,8.4,9.2,8.93,8.84
+Bolaang Mongondow Timur,Sulawesi Utara,kecil,3,Menengah Aktif,0.7333,0.7143,1.0,1.0,1.0,0.84,0.8057,0.8933,0.8463,8.4,8.06,8.93,8.46
+Bolaang Mongondow Utara,Sulawesi Utara,sedang,3,Menengah Aktif,0.7333,1.0,0.7778,1.0,1.0,0.84,0.92,0.8267,0.8622,8.4,9.2,8.27,8.62
+Bondowoso,Jawa Timur,besar,3,Menengah Aktif,0.6552,0.8571,1.0,1.0,1.0,0.7931,0.8394,0.8621,0.8315,7.93,8.39,8.62,8.32
+Boven Digoel,Papua Selatan,sedang,3,Menengah Aktif,1.0,0.7143,1.0,1.0,1.0,1.0,0.8857,1.0,0.9619,10.0,8.86,10.0,9.62
+Boyolali,Jawa Tengah,metropolitan,3,Menengah Aktif,0.8182,1.0,1.0,1.0,1.0,0.8909,0.9455,0.9273,0.9212,8.91,9.45,9.27,9.21
+Brebes,Jawa Tengah,metropolitan,3,Menengah Aktif,0.8182,1.0,1.0,1.0,1.0,0.8909,0.9455,0.9273,0.9212,8.91,9.45,9.27,9.21
+Bulukumba,Sulawesi Selatan,sedang,3,Menengah Aktif,0.6471,1.0,0.8889,1.0,1.0,0.7882,0.8941,0.8255,0.8359,7.88,8.94,8.25,8.36
+Buton Selatan,Sulawesi Tenggara,sedang,3,Menengah Aktif,0.8571,0.4286,1.0,1.0,1.0,0.9143,0.7286,0.9429,0.8619,9.14,7.29,9.43,8.62
+Ciamis,Jawa Barat,metropolitan,3,Menengah Aktif,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Cianjur,Jawa Barat,metropolitan,3,Menengah Aktif,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Dairi,Sumatera Utara,besar,3,Menengah Aktif,0.875,1.0,1.0,1.0,1.0,0.925,0.9625,0.95,0.9458,9.25,9.63,9.5,9.46
+Demak,Jawa Tengah,metropolitan,3,Menengah Aktif,0.8182,1.0,1.0,1.0,1.0,0.8909,0.9455,0.9273,0.9212,8.91,9.45,9.27,9.21
+Dogiyai,Papua Tengah,kecil,3,Menengah Aktif,0.3333,1.0,0.8889,0.0,1.0,0.6,0.8,0.7,0.7,6.0,8.0,7.0,7.0
+Gayo Lues,Aceh,sedang,3,Menengah Aktif,0.9565,0.8571,1.0,1.0,1.0,0.9739,0.9298,0.9826,0.9621,9.74,9.3,9.83,9.62
+Jember,Jawa Timur,metropolitan,3,Menengah Aktif,0.6552,0.8571,0.8889,1.0,1.0,0.7931,0.8394,0.8287,0.8204,7.93,8.39,8.29,8.2
+Jepara,Jawa Tengah,metropolitan,3,Menengah Aktif,0.8182,1.0,1.0,1.0,1.0,0.8909,0.9455,0.9273,0.9212,8.91,9.45,9.27,9.21
+Jombang,Jawa Timur,metropolitan,3,Menengah Aktif,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Kaimana,Papua Barat,kecil,3,Menengah Aktif,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Kapuas Hulu,Kalimantan Barat,sedang,3,Menengah Aktif,0.3636,0.5714,1.0,1.0,1.0,0.6182,0.6377,0.7455,0.6671,6.18,6.38,7.45,6.67
+Karangasem,Bali,besar,3,Menengah Aktif,0.875,1.0,1.0,1.0,1.0,0.925,0.9625,0.95,0.9458,9.25,9.63,9.5,9.46
+Kolaka Timur,Sulawesi Tenggara,sedang,3,Menengah Aktif,0.8571,0.8571,1.0,1.0,1.0,0.9143,0.9,0.9429,0.919,9.14,9.0,9.43,9.19
+Kota Bengkulu,Bengkulu,sedang,3,Menengah Aktif,0.6,1.0,1.0,1.0,1.0,0.76,0.88,0.84,0.8267,7.6,8.8,8.4,8.27
+Kota Pagar Alam,Sumatera Selatan,sedang,3,Menengah Aktif,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,10.0,10.0,10.0
+Kota Sibolga,Sumatera Utara,metropolitan,3,Menengah Aktif,0.875,1.0,1.0,1.0,0.0,0.525,0.6625,0.65,0.6125,5.25,6.63,6.5,6.12
+Kota Subulussalam,Aceh,kecil,3,Menengah Aktif,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Kuantan Singingi,Riau,besar,3,Menengah Aktif,0.6667,0.8571,0.8889,1.0,1.0,0.8,0.8429,0.8333,0.8254,8.0,8.43,8.33,8.25
+Kupang,Nusa Tenggara Timur,sedang,3,Menengah Aktif,0.9412,0.4286,1.0,1.0,1.0,0.9647,0.7538,0.9765,0.8983,9.65,7.54,9.76,8.98
+Kutai Barat,Kalimantan Timur,besar,3,Menengah Aktif,0.9,0.1429,0.4444,1.0,1.0,0.94,0.6271,0.7933,0.7868,9.4,6.27,7.93,7.87
+Landak,Kalimantan Barat,sedang,3,Menengah Aktif,0.3636,0.8571,0.7778,1.0,1.0,0.6182,0.7519,0.6788,0.683,6.18,7.52,6.79,6.83
+Lebong,Bengkulu,sedang,3,Menengah Aktif,0.6,1.0,1.0,1.0,1.0,0.76,0.88,0.84,0.8267,7.6,8.8,8.4,8.27
+Lembata,Nusa Tenggara Timur,sedang,3,Menengah Aktif,0.9412,0.4286,1.0,1.0,1.0,0.9647,0.7538,0.9765,0.8983,9.65,7.54,9.76,8.98
+Lombok Barat,Nusa Tenggara Barat,besar,3,Menengah Aktif,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,10.0,10.0,10.0
+Lombok Tengah,Nusa Tenggara Barat,metropolitan,3,Menengah Aktif,1.0,1.0,0.8889,1.0,1.0,1.0,1.0,0.9667,0.9889,10.0,10.0,9.67,9.89
+Lombok Timur,Nusa Tenggara Barat,metropolitan,3,Menengah Aktif,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,10.0,10.0,10.0
+Luwu Utara,Sulawesi Selatan,sedang,3,Menengah Aktif,0.6471,0.8571,1.0,1.0,1.0,0.7882,0.837,0.8588,0.828,7.88,8.37,8.59,8.28
+Madiun,Jawa Timur,besar,3,Menengah Aktif,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Mahakam Ulu,Kalimantan Timur,kecil,3,Menengah Aktif,0.9,0.8571,1.0,1.0,0.0,0.54,0.6129,0.66,0.6043,5.4,6.13,6.6,6.04
+Malaka,Nusa Tenggara Timur,sedang,3,Menengah Aktif,0.9412,0.8571,1.0,1.0,0.0,0.5647,0.6252,0.6765,0.6221,5.65,6.25,6.76,6.22
+Maluku Barat Daya,Maluku,kecil,3,Menengah Aktif,0.4,1.0,1.0,1.0,1.0,0.64,0.82,0.76,0.74,6.4,8.2,7.6,7.4
+Manggarai Barat,Nusa Tenggara Timur,sedang,3,Menengah Aktif,0.9412,0.7143,0.8889,1.0,1.0,0.9647,0.8681,0.9431,0.9253,9.65,8.68,9.43,9.25
+Mempawah,Kalimantan Barat,besar,3,Menengah Aktif,0.3636,1.0,1.0,1.0,1.0,0.6182,0.8091,0.7455,0.7242,6.18,8.09,7.45,7.24
+Minahasa Selatan,Sulawesi Utara,sedang,3,Menengah Aktif,0.7333,1.0,1.0,1.0,1.0,0.84,0.92,0.8933,0.8844,8.4,9.2,8.93,8.84
+Muna,Sulawesi Tenggara,sedang,3,Menengah Aktif,0.8571,1.0,1.0,1.0,1.0,0.9143,0.9571,0.9429,0.9381,9.14,9.57,9.43,9.38
+Musi Rawas Utara,Sumatera Selatan,sedang,3,Menengah Aktif,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,10.0,10.0,10.0
+Nagekeo,Nusa Tenggara Timur,sedang,3,Menengah Aktif,0.9412,0.7143,1.0,1.0,1.0,0.9647,0.8681,0.9765,0.9364,9.65,8.68,9.76,9.36
+Nias,Sumatera Utara,sedang,3,Menengah Aktif,0.875,1.0,1.0,1.0,1.0,0.925,0.9625,0.95,0.9458,9.25,9.63,9.5,9.46
+Ogan Ilir,Sumatera Selatan,sedang,3,Menengah Aktif,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,10.0,10.0,10.0
+Ogan Komering Ulu,Sumatera Selatan,sedang,3,Menengah Aktif,1.0,0.8571,0.8889,1.0,1.0,1.0,0.9429,0.9667,0.9698,10.0,9.43,9.67,9.7
+Pacitan,Jawa Timur,besar,3,Menengah Aktif,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Padang Pariaman,Sumatera Barat,besar,3,Menengah Aktif,0.6667,0.7143,0.8889,1.0,1.0,0.8,0.7857,0.8333,0.8063,8.0,7.86,8.33,8.06
+Pakpak Bharat,Sumatera Utara,sedang,3,Menengah Aktif,0.875,1.0,1.0,1.0,1.0,0.925,0.9625,0.95,0.9458,9.25,9.63,9.5,9.46
+Pamekasan,Jawa Timur,besar,3,Menengah Aktif,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Pati,Jawa Tengah,metropolitan,3,Menengah Aktif,0.8182,1.0,1.0,1.0,1.0,0.8909,0.9455,0.9273,0.9212,8.91,9.45,9.27,9.21
+Pemalang,Jawa Tengah,metropolitan,3,Menengah Aktif,0.8182,1.0,1.0,1.0,1.0,0.8909,0.9455,0.9273,0.9212,8.91,9.45,9.27,9.21
+Pesawaran,Lampung,sedang,3,Menengah Aktif,0.6667,0.7143,1.0,1.0,1.0,0.8,0.7857,0.8667,0.8175,8.0,7.86,8.67,8.17
+Pesisir Selatan,Sumatera Barat,sedang,3,Menengah Aktif,0.6667,0.8571,0.7778,1.0,1.0,0.8,0.8429,0.8,0.8143,8.0,8.43,8.0,8.14
+Pidie Jaya,Aceh,sedang,3,Menengah Aktif,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Probolinggo,Jawa Timur,metropolitan,3,Menengah Aktif,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Pulang Pisau,Kalimantan Tengah,sedang,3,Menengah Aktif,0.6667,0.7143,1.0,1.0,1.0,0.8,0.7857,0.8667,0.8175,8.0,7.86,8.67,8.17
+Purwakarta,Jawa Barat,metropolitan,3,Menengah Aktif,0.6667,0.8571,1.0,1.0,1.0,0.8,0.8429,0.8667,0.8365,8.0,8.43,8.67,8.37
+Purworejo,Jawa Tengah,besar,3,Menengah Aktif,0.8182,1.0,1.0,1.0,1.0,0.8909,0.9455,0.9273,0.9212,8.91,9.45,9.27,9.21
+Raja Ampat,Papua Barat Daya,kecil,3,Menengah Aktif,0.3333,0.8571,1.0,1.0,1.0,0.6,0.7429,0.7333,0.6921,6.0,7.43,7.33,6.92
+Rote Ndao,Nusa Tenggara Timur,sedang,3,Menengah Aktif,0.9412,1.0,1.0,1.0,1.0,0.9647,0.9824,0.9765,0.9745,9.65,9.82,9.76,9.75
+Serdang Bedagai,Sumatera Utara,besar,3,Menengah Aktif,0.875,1.0,1.0,1.0,1.0,0.925,0.9625,0.95,0.9458,9.25,9.63,9.5,9.46
+Siau Tagulandang Biaro,Sulawesi Utara,kecil,3,Menengah Aktif,0.7333,0.8571,0.7778,1.0,1.0,0.84,0.8629,0.8267,0.8432,8.4,8.63,8.27,8.43
+Sikka,Nusa Tenggara Timur,sedang,3,Menengah Aktif,0.9412,1.0,1.0,1.0,1.0,0.9647,0.9824,0.9765,0.9745,9.65,9.82,9.76,9.75
+Simeulue,Aceh,sedang,3,Menengah Aktif,0.9565,1.0,1.0,1.0,1.0,0.9739,0.987,0.9826,0.9812,9.74,9.87,9.83,9.81
+Solok Selatan,Sumatera Barat,sedang,3,Menengah Aktif,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Sumba Barat Daya,Nusa Tenggara Timur,kecil,3,Menengah Aktif,0.9412,0.5714,1.0,1.0,1.0,0.9647,0.8109,0.9765,0.9174,9.65,8.11,9.76,9.17
+Sumba Tengah,Nusa Tenggara Timur,sedang,3,Menengah Aktif,0.9412,1.0,1.0,1.0,1.0,0.9647,0.9824,0.9765,0.9745,9.65,9.82,9.76,9.75
+Sumba Timur,Nusa Tenggara Timur,sedang,3,Menengah Aktif,0.9412,1.0,1.0,1.0,1.0,0.9647,0.9824,0.9765,0.9745,9.65,9.82,9.76,9.75
+Sumbawa,Nusa Tenggara Barat,besar,3,Menengah Aktif,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,10.0,10.0,10.0
+Sumedang,Jawa Barat,metropolitan,3,Menengah Aktif,0.6667,0.7143,1.0,1.0,1.0,0.8,0.7857,0.8667,0.8175,8.0,7.86,8.67,8.17
+Tanah Datar,Sumatera Barat,sedang,3,Menengah Aktif,0.6667,0.7143,0.7778,1.0,1.0,0.8,0.7857,0.8,0.7952,8.0,7.86,8.0,7.95
+Tanah Laut,Kalimantan Selatan,sedang,3,Menengah Aktif,0.6154,1.0,1.0,1.0,1.0,0.7692,0.8846,0.8462,0.8333,7.69,8.85,8.46,8.33
+Tanggamus,Lampung,metropolitan,3,Menengah Aktif,0.6667,0.5714,0.8889,1.0,1.0,0.8,0.7286,0.8333,0.7873,8.0,7.29,8.33,7.87
+Tasikmalaya,Jawa Barat,metropolitan,3,Menengah Aktif,0.6667,1.0,1.0,1.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Tebo,Jambi,sedang,3,Menengah Aktif,0.8,1.0,1.0,1.0,1.0,0.88,0.94,0.92,0.9133,8.8,9.4,9.2,9.13
+Timor Tengah Selatan,Nusa Tenggara Timur,sedang,3,Menengah Aktif,0.9412,1.0,1.0,1.0,1.0,0.9647,0.9824,0.9765,0.9745,9.65,9.82,9.76,9.75
+Timor Tengah Utara,Nusa Tenggara Timur,sedang,3,Menengah Aktif,0.9412,0.7143,0.5556,1.0,1.0,0.9647,0.8681,0.8431,0.892,9.65,8.68,8.43,8.92
+Trenggalek,Jawa Timur,besar,3,Menengah Aktif,0.6552,1.0,1.0,1.0,1.0,0.7931,0.8966,0.8621,0.8506,7.93,8.97,8.62,8.51
+Tulang Bawang Barat,Lampung,sedang,3,Menengah Aktif,0.6667,0.7143,0.6667,1.0,1.0,0.8,0.7857,0.7667,0.7841,8.0,7.86,7.67,7.84
+Tulangbawang,Lampung,sedang,3,Menengah Aktif,0.6667,0.8571,0.6667,1.0,1.0,0.8,0.8429,0.7667,0.8032,8.0,8.43,7.67,8.03
+Way Kanan,Lampung,metropolitan,3,Menengah Aktif,0.6667,0.7143,0.8889,0.0,1.0,0.8,0.7857,0.8333,0.8063,8.0,7.86,8.33,8.06
+Morowali,Sulawesi Tengah,sedang,4,Industri/Tambang (PDRB Tinggi),0.6667,1.0,1.0,0.0,1.0,0.8,0.9,0.8667,0.8556,8.0,9.0,8.67,8.56
+Penajam Paser Utara,Kalimantan Timur,sedang,4,Industri/Tambang (PDRB Tinggi),0.9,1.0,1.0,1.0,1.0,0.94,0.97,0.96,0.9567,9.4,9.7,9.6,9.57
+Sumbawa Barat,Nusa Tenggara Barat,sedang,4,Industri/Tambang (PDRB Tinggi),1.0,0.8571,0.5556,1.0,1.0,1.0,0.9429,0.8667,0.9365,10.0,9.43,8.67,9.37
